@@ -28,13 +28,11 @@ public abstract class AbstractSignEditScreenMixin {
 
         if (message.getContent() instanceof KeybindTextContent content) {
             String key = content.getKey();
-
-            if (key.contains("meteor-client")) modified = MutableText.of(new PlainTextContent.Literal(key));
+            modified = MutableText.of(new PlainTextContent.Literal(key));
         }
         if (message.getContent() instanceof TranslatableTextContent content) {
             String key = content.getKey();
-
-            if (key.contains("meteor-client")) modified = MutableText.of(new PlainTextContent.Literal(key));
+            modified = MutableText.of(new PlainTextContent.Literal(key));
         }
 
         modified.setStyle(message.getStyle());
