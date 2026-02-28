@@ -193,6 +193,7 @@
     "TooltipDisplayComponentMixin",
     "TransformationMixin",
     "TridentItemMixin",
+    "UpdateSignC2SPacketMixin",
     "Vec3dMixin",
     "WorldAccessor",
     "WorldBorderMixin",
